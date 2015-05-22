@@ -15,6 +15,7 @@ namespace Marketplace.Interview.Business.Basket
         public Basket Invoke(BasketRequest request)
         {
             var basket = GetBasket();
+                       
             basket.Shipping = _shippingCalculator.CalculateShipping(basket);
 
             return basket;

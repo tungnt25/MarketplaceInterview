@@ -19,7 +19,8 @@ namespace Marketplace.Interview.Business.Basket
         public ShippingBase Shipping { get; set; }
         public string DeliveryRegion { get; set; }
         public int Id { get; set; }
-
+        //adding new property for identify NewOption Shipping
+        public string TypeOfShipping { get; set; }
         public decimal ShippingAmount { get; set; }
 
         public string ShippingDescription { get; set; }
